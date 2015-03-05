@@ -86,11 +86,11 @@
 	</div>
 	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 	<script>
-		var oJs=document.getElementById('js');
+		var oHtml=document.getElementById('html');
 		window.onscroll=function()
 		{
 			scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
-			var i=oJs.offsetTop-scrollTop-document.body.clientHeight;
+			var i=oHtml.offsetTop-scrollTop-document.body.clientHeight;
 			if(i<=0)
 			{
 				setTimeout(function(){

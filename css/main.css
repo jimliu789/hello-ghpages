@@ -171,10 +171,10 @@ body{
 	height: 10px;
 	background: #fe5f41;
 	border-radius: 5px;
-	transition:width 1s;
-	-webkit-transition:width 1s;
-	-moz-transition:width 1s;
-	-o-transition:width 1s;
+	transition:width 1.5s;
+	-webkit-transition:width 1.5s;
+	-moz-transition:width 1.5s;
+	-o-transition:width 1.5s;
 }
 .percent{
 	margin-left: 20px;
