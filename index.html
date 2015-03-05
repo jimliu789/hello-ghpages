@@ -86,17 +86,19 @@
 	</div>
 	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 	<script>
-		var oPs=document.getElementById('ps');
+		var oJs=document.getElementById('js');
 		window.onscroll=function()
 		{
 			scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
-			var i=oPs.offsetTop-scrollTop-document.body.clientHeight;
+			var i=oJs.offsetTop-scrollTop-document.body.clientHeight;
 			if(i<=0)
 			{
-				$('#ps .bar_con').css('width','50%');
-				$('#html .bar_con').css('width','99%');
-				$('#css3 .bar_con').css('width','70%');
-				$('#js .bar_con').css('width','40%');
+				setTimeout(function(){
+					$('#ps .bar_con').css('width','50%');
+					$('#html .bar_con').css('width','99%');
+					$('#css3 .bar_con').css('width','70%');
+					$('#js .bar_con').css('width','40%');
+				},200)
 			}
 		}
 	</script>
