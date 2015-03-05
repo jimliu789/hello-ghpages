@@ -1,16 +1,104 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Hello-ghpages : 我的第二个githubpage">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>我的第一个github page</title>
-  </head>
-  <body>
-  	<h1>我的第一个github page</h1>
-  </body>
+<html lang="ch-ZN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="我是刘星海，一个前端学习者">
+	<meta name="desciption" content="刘星海的个人简介">
+	<title>刘星海的个人简介</title>
+	<link rel="shortcut icon"  href="logo.png">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="information">
+			<div class="img"><img src="images/me.jpg"></div>
+			<p class="name">刘星海</p>
+			<div class="info_content">
+				<div class="border-r">男生</div>
+				<div class="border-r">20岁</div>
+				<div class="border-r">巨蟹座</div>
+				<div>洛阳</div>
+			</div>
+		</div>
+		<div class="about">
+			<div class="title">
+				关于我
+			</div>
+			<div class="tag_wrappera">
+				<div class="tag">热情</div>
+				<div class="tag">善于与人合作</div>
+				<div class="tag">适应能力强</div>
+				<div class="tag">喜欢新鲜技术</div>
+				<div class="tag">学习能力强</div>
+			</div>
+			<div class="tag_wrapperb">
+				<div class="tag">神经大条</div>
+				<div class="tag">略微粗心</div>
+			</div>
+			<div class="text" id="text">
+				我是一个学习前端的学生一枚，就读于河南中医学院 计算机科学与技术专业（想必大家都很奇怪，医学院还有计算机，刚被调剂我也很奇怪，后来就自己适应了环境喜欢上了这个专业）,现在在郑州飞道科技有限公司实习做前端切图。从大一下半学期学习网页设计与网页开发这门课开始，我就爱上了前端开发。从刚开始的盲目到现在目标明确，中间我也经历了好多痛苦的阶段，看到别人会的技能好多，而自己却只在前端徘徊不前，好痛苦。再往后就看各种论坛和一些前端大牛们的博客，慢慢的学习，慢慢的明确目标。我相信，不停地走世界就没有尽头。
+			</div>
+			<div class="pic">
+				<img src="images/pic.jpg">
+			</div>
+		</div>
+		<div class="skill" id="skill">
+			<div class="title">
+				技能
+			</div>
+			<div class="skill_info" id="ps">
+				<div class="skill_title">PS</div>
+				<div class="bar">
+					<div class="bar_con"></div>
+				</div>
+				<div class="percent">50%</div>
+			</div>
+			<div class="skill_info" id="html">
+				<div class="skill_title">HTML/CSS</div>
+				<div class="bar">
+					<div class="bar_con"></div>
+				</div>
+				<div class="percent">99%</div>
+			</div>
+			<div class="skill_info" id="css3">
+				<div class="skill_title">CSS3</div>
+				<div class="bar">
+					<div class="bar_con"></div>
+				</div>
+				<div class="percent">70%</div>
+			</div>
+			<div class="skill_info" id="js">
+				<div class="skill_title">javascript</div>
+				<div class="bar">
+					<div class="bar_con"></div>
+				</div>
+				<div class="percent">40%</div>
+			</div>
+		</div>
+		<div class="contact" id="contact">
+			<div class="title">
+				联系我
+			</div>
+			<div class="weibo">
+				<a href="http://weibo.com/jimliuxinghai" target="_blank">微博ID:你在我记忆里</a>
+			</div>
+		</div>
+	</div>
+	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		var oPs=document.getElementById('ps');
+		window.onscroll=function()
+		{
+			scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+			var i=oPs.offsetTop-scrollTop-document.body.clientHeight;
+			if(i<=0)
+			{
+				$('#ps .bar_con').css('width','50%');
+				$('#html .bar_con').css('width','99%');
+				$('#css3 .bar_con').css('width','70%');
+				$('#js .bar_con').css('width','40%');
+			}
+		}
+	</script>
+</body>
 </html>
